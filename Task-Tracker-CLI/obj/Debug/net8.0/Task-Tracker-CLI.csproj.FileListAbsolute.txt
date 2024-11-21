@@ -1,0 +1,11 @@
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\bin\Debug\net8.0\Task-Tracker-CLI.dll
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\bin\Debug\net8.0\Task-Tracker-CLI.deps.json
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.csproj.AssemblyReference.cache
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.AssemblyInfoInputs.cache
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.AssemblyInfo.cs
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.csproj.CoreCompileInputs.cache
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.sourcelink.json
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.dll
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\refint\Task-Tracker-CLI.dll
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.pdb
