@@ -27,13 +27,13 @@ Weitere Informationen findest unter:
 
 # Arbeits-Protokoll
 
-### 19.11.2024
+## 19.11.2024
 
 Start des Projekts. Ich habe eine ``Console-Anwendung`` mit Visual Studio erstellt. 
 - Noch keine Änderungen oder Features hinzugefügt.
 
 
-### 21.11.2024
+## 21.11.2024
 
 Als ich mir heute die Aufgabe nochmal angeschaut habe. Ist mir aufgefallen das die Befehle im CLI ausgeführt werden und eine Console App nach der Ausführung beendet wird. Also habe ich mich schlau gemacht und herausgefunden das man ``Cmdlets`` bauen kann die man in der Powershell ausführen kann.
 
@@ -93,7 +93,7 @@ Nachdem ich einige Änderungen vorgenommen habe, funktioniert der Import der ``D
 
 ![](./_images/Error_ImportDDL.png)
 
-### 22.11.2024
+## 22.11.2024
 
 Gestern und heute habe ich versucht, meinen Konsolenfehler zu beheben. Leider habe ich im Internet nichts gefunden oder es hat nicht geholfen. Ich habe dann noch ein [Nuget Package](https://www.nuget.org/packages/system.management.automation/) heruntergeladen in der Hoffnung, dass es damit funktioniert.
 
