@@ -9,3 +9,5 @@ C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug
 C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.dll
 C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\refint\Task-Tracker-CLI.dll
 C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\Task-Tracker-CLI.pdb
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\bin\Debug\net8.0\Task-Tracker-CLI.pdb
+C:\Users\Came\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker-CLI\obj\Debug\net8.0\ref\Task-Tracker-CLI.dll
