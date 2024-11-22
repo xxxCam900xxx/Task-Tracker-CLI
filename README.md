@@ -106,11 +106,74 @@ Meine Vermutung ist das es vielleicht an meiner Umgebung liegt:
 Ich habe mich entschieden das Projekt neu zu bauen, um zu sehen ob es noch funktioniert. Es kann gut sein, dass meine ``DLL`` einen Fehler hatte und ich sie in meiner Lösung nicht rekonstruieren konnte.
 Folgende Dokumentation befolge ich um zu schauen ob die mir etwas bringt. [PowerShell Module als DLL in C# erstellen](https://www.nick-it.de/blog/powershell/powershell-module-als-dll-in-c-erstellen)
 
-Das erste was ich festgestellt habe ist, dass ich die ganze Zeit die Falsche Libary benutzt habe. Es gibt 2 unterschiedliche Libarys. Eine Libary hat den bezug auf .Net, während das andere eine ``DLL`` macht. Kannst 3mal raten welches ich benutzt habe... Genau die .NET bezogene...
+Als erstes habe ich festgestellt, dass ich die ganze Zeit die falsche Libary benutzt habe. Es gibt zwei verschiedene Libarys. Eine Libary hat eine .Net Referenz, während die andere eine ``DLL`` ist. 3 mal raten welche ich benutzt habe... Genau die mit .NET...
 
 ![](./_images/Create_Project_newTry.png)
 
-Habe dann die DLL Libary genommen und meine Nuget Packages installiert die ich braucht und siehe da, es gab nicht einmal WARNINGS!!!!
+Dann nahm ich die DLL Libary und installierte meine Nuget Packages die ich brauchte und siehe da, es gab nicht einmal WARNINGS!!!!
 
 ![](./_images/Added_newNugetPackages_tonewProj.png)
+
+Nachdem alles installiert war, habe ich einen kleinen Testcode aus der Dokumentation kopiert und modifiziert.
+
+### Beispiel Code Task-Tracker.cs
+```C#
+using System;
+using System.Collections.Generic;
+using System.Management.Automation;
+
+namespace Task_Tracker
+{
+
+    [Cmdlet(VerbsCommon.Get, "NITPerf")]
+    [OutputType(typeof(Task))]
+    public class TaskTracker : Cmdlet
+    {
+
+        private string myparameter;
+        private string myparameter2;
+        private string myparameter3;
+
+        [Parameter]
+        public string Myparameter { get => myparameter; set => myparameter = value; }
+
+        [Parameter(ValueFromPipelineByPropertyName = true, ValueFromPipeline = true)]
+        public string Myparameter2 { get => myparameter2; set => myparameter2 = value; }
+
+        [Parameter]
+        public string Myparameter3 { get => myparameter3; set => myparameter3 = value; }
+        protected override void ProcessRecord()
+        {
+
+            Random ro = new Random();
+
+            List<Task> returnList = new List<Task>();
+            for (int i = 0; i < 10; i++)
+            {
+                var r1 = new Task();
+                r1.Name = ro.Next().ToString();
+                r1.Description = ro.Next().ToString();
+                WriteObject(r1);
+            }
+        }
+    }
+}
+```
+### Beispiel Code Task.cs
+```C#
+namespace Task_Tracker
+{
+    public class Task
+    {
+        public int TaskID { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+    }
+}
+
+```
+
+Dann führte ich meinen Befehl aus, um die generierte DLL einzufügen, und alles funktionierte. !!!! Ich war wie vom Donner gerührt, als ich nichts Rotes mehr sah.
+
+![](./_images/WorkingDLL.png)
 
