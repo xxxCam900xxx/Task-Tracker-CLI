@@ -92,3 +92,11 @@ Get-Help  -full
 Nachdem ich einige Änderungen vorgenommen habe, funktioniert der Import der ``DDL`` nicht mehr.
 
 ![](./_images/Error_ImportDDL.png)
+
+### 22.11.2024
+
+Gestern und heute habe ich versucht, meinen Konsolenfehler zu beheben. Leider habe ich im Internet nichts gefunden oder es hat nicht geholfen. Ich habe dann noch ein [Nuget Package](https://www.nuget.org/packages/system.management.automation/) heruntergeladen in der Hoffnung, dass es damit funktioniert.
+
+Meine Vermutung ist das es vielleicht an meiner Umgebung liegt:
+- **Visual Studio** hat das falsche Framework für Powershell.
+- **Powershell** muss auf dem neuesten Stand sein oder eine ältere Version haben.
