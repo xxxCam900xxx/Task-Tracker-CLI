@@ -100,3 +100,17 @@ Gestern und heute habe ich versucht, meinen Konsolenfehler zu beheben. Leider ha
 Meine Vermutung ist das es vielleicht an meiner Umgebung liegt:
 - **Visual Studio** hat das falsche Framework für Powershell.
 - **Powershell** muss auf dem neuesten Stand sein oder eine ältere Version haben.
+
+## Restart Projekt
+
+Ich habe mich entschieden das Projekt neu zu bauen, um zu sehen ob es noch funktioniert. Es kann gut sein, dass meine ``DLL`` einen Fehler hatte und ich sie in meiner Lösung nicht rekonstruieren konnte.
+Folgende Dokumentation befolge ich um zu schauen ob die mir etwas bringt. [PowerShell Module als DLL in C# erstellen](https://www.nick-it.de/blog/powershell/powershell-module-als-dll-in-c-erstellen)
+
+Das erste was ich festgestellt habe ist, dass ich die ganze Zeit die Falsche Libary benutzt habe. Es gibt 2 unterschiedliche Libarys. Eine Libary hat den bezug auf .Net, während das andere eine ``DLL`` macht. Kannst 3mal raten welches ich benutzt habe... Genau die .NET bezogene...
+
+![](./_images/Create_Project_newTry.png)
+
+Habe dann die DLL Libary genommen und meine Nuget Packages installiert die ich braucht und siehe da, es gab nicht einmal WARNINGS!!!!
+
+![](./_images/Added_newNugetPackages_tonewProj.png)
+
