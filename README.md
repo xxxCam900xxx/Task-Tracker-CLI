@@ -25,6 +25,16 @@ Weitere Informationen findest unter:
 
 ---
 
+# TODO-LIST
+
+- [ ] Add, Update, and Delete Tasks
+- [ ] Einen automatisierten DLL-Import durchführen
+- [ ] Eine Aufgabe als in Bearbeitung oder erledigt markieren
+- [ ] Alle Aufgaben auflisten
+- [ ] List all tasks that are done
+- [ ] List all tasks that are not done
+- [ ] List all tasks that are in progress
+
 # Arbeits-Protokoll
 
 ## 19.11.2024
@@ -177,3 +187,18 @@ Dann führte ich meinen Befehl aus, um die generierte DLL einzufügen, und alles
 
 ![](./_images/WorkingDLL.png)
 
+
+## 28.11.2024
+
+Heute habe ich mir mein Projekt noch einmal angeschaut. Ich habe alles getestet und es funktioniert immer noch. Zuerst habe ich die Kommentare bereinigt, als ich die Methode ausgeführt habe, ist mir aufgefallen, dass die Methode `ProcessRecord()` Text in die Powershell schreibt.
+
+````C#
+protected override void ProcessRecord()
+{
+    WriteObject("Hello World");
+}
+````
+
+Mit diesem Wissen rufe ich dann meine JSON-Tasks auf!
+
+Was vielleicht noch in die ToDo-Liste aufgenommen wird, ist die Automatisierung mit der Einbindung der ``DLL``.
