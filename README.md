@@ -202,3 +202,33 @@ protected override void ProcessRecord()
 Mit diesem Wissen rufe ich dann meine JSON-Tasks auf!
 
 Was vielleicht noch in die ToDo-Liste aufgenommen wird, ist die Automatisierung mit der Einbindung der ``DLL``.
+
+## 29.11.2024
+
+Auf Json-Dateien mit C# zuzugreifen und sie zu bearbeiten ist nicht so einfach, wie ich es mir in einer Klassenbibliothek vorgestellt habe, oder ich stelle mich einfach nur dumm.
+
+Ich bin jetzt so weit, das ich die Json Datei auslesen und in ein C# Objekt umwandeln kann. Wie ich das nun sinnvoll in die Call Methode einbauen kann weiß ich noch nicht.
+
+Ich habe viel recherchiert und bin auf die folgenden Dokumentationen gestoßen:
+
+- [Lookup Dokumentation](https://medium.com/@Has_San/json-handling-in-c-a-comprehensive-guide-for-developers-0ed233365bf2#:~:text=At%20its%20core%2C%20a%20JSON,objects%20into%20a%20usable%20format.)
+- [Loadup JsonFile - Stack Overflow](https://stackoverflow.com/questions/18538428/loading-a-json-file-into-c-sharp-program)
+
+Letztendlich hat mir diese Dokumentation geholfen, wie ich das jetzt am besten einbauen kann. [Link zur Dokumentation](https://learn.microsoft.com/en-us/dotnet/standard/serialization/system-text-json/deserialization) (zum besseren Verständnis haben mir alle Dokumentationen geholfen, jeweils ein Codeabschnitt)
+
+Als ich anfing, sollte ich noch ein neues Nuget Package herunterladen, noch unsicher, bin ich stur der einen Doku gefolgt und habe [Nuget Package for Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json/13.0.3?_src=template) heruntergeladen.
+
+![](./_images/29-11-2024/Newtonsoft.png)
+
+Später bemerkte ich, dass dieses Nuget Package mir Building Errors gab, da die Methode anscheinend etwas anders machte. Deswegen habe ich dann das Nuget Package [System.Text.Json](https://www.nuget.org/packages/System.Text.Json/9.0.0?_src=template) gefunden.
+
+![](./_images/29-11-2024/SystemJson.png)
+
+Um mir den Test zu erleichtern, habe ich meine Bestellung hier aufgeschrieben:
+
+```Powershell
+cd '.\Desktop\Priv. Projcets\Task-Tracker-CLI\Task-Tracker\bin\Debug\'
+Import-Module .\Task-Tracker.dll
+Get-AllTask
+```
+
